@@ -1,0 +1,14 @@
+{
+  "name": "garbage-baron",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "discord.js": "^14.14.1"
+  },
+  "main": "src/index.js"
+}
