@@ -6,7 +6,7 @@ client.login('MTIwMTY5NzE2MzYwODg1NDU2OQ.GizeZE.2Zpb400wla46z_g4mbybeHN3-vjno6C3
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
-    setInterval(ping, 10 * 60 * 1000)
+    setInterval(ping, 5 * 60 * 1000)
 });
 
 client.on('messageCreate', (message) => {

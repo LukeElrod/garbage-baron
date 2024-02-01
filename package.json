@@ -2,13 +2,15 @@
   "name": "garbage-baron",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@azure/functions": "^4.0.0",
     "discord.js": "^14.14.1"
-  },
-  "main": "src/index.js"
+  }
 }
