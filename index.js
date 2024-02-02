@@ -6,7 +6,6 @@ client.login('MTIwMTY5NzE2MzYwODg1NDU2OQ.GizeZE.2Zpb400wla46z_g4mbybeHN3-vjno6C3
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
-    setInterval(ping, 5 * 60 * 1000)
 });
 
 client.on('messageCreate', (message) => {
@@ -33,8 +32,3 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
         }
     }
 });
-
-function ping() {
-    const guild = client.guilds.cache.get('610571667806355467');
-    console.log('keeping the baron awake...')
-}
