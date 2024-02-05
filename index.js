@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client({ intents: [Discord.GatewayIntentBits.MessageContent, Discord.GatewayIntentBits.GuildMessages, Discord.GatewayIntentBits.Guilds, Discord.GatewayIntentBits.GuildMembers, 
     Discord.GatewayIntentBits.GuildModeration, Discord.GatewayIntentBits.GuildMessageReactions] })
 
-client.login('MTIwMTY5NzE2MzYwODg1NDU2OQ.GizeZE.2Zpb400wla46z_g4mbybeHN3-vjno6C3VY1kaI');
+client.login(process.env.API_KEY);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
