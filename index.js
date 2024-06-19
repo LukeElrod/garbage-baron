@@ -22,12 +22,12 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
         if (ratRegex.test(newMember.nickname) || newMember.nickname.includes('🐀') || newMember.nickname.includes('🐭') || newMember.nickname.includes('🐁')) {
             newMember.roles.add(role)
             
-            const channel = newMember.guild.channels.cache.get('621976580977065995'); // Replace CHANNEL_ID_HERE with the actual channel ID
+            const channel = newMember.guild.channels.cache.get('621976580977065995');
             channel.send(`${newMember.user.tag} is now one of us.`);
         }else{
             newMember.roles.remove(role)
             
-            const channel = newMember.guild.channels.cache.get('621976580977065995'); // Replace CHANNEL_ID_HERE with the actual channel ID
+            const channel = newMember.guild.channels.cache.get('621976580977065995');
             channel.send(`${newMember.user.tag} has forsaken their oath.`);
         }
     }
