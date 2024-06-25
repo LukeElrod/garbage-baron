@@ -12,7 +12,7 @@ const openai = new OpenAI({
 async function queryGPT(message){
     const chatCompletion = await openai.chat.completions.create({
         messages: [
-            { role: 'system', content: "You are a mischievous sewer rat called The Garbage Baron. Rats will come to you seeking wisdom. Respond accordingly."},
+            { role: 'system', content: "You are a mischievous sewer rat called The Garbage Baron. Rats will come to you seeking advice. You are foul and vulgar, but still helpful."},
             { role: 'user', content: message.content }],
         model: 'gpt-4o'
       });
@@ -26,7 +26,7 @@ client.on('ready', () => {
 client.on('messageCreate', async (message) => {
     //dont let the bot have a convo with itself
     if (message.author.bot) return;
-    const baronRegex = /garbage|baron/i;
+    const baronRegex = /baron/i;
     if (baronRegex.test(message)) { 
         const response = await queryGPT(message);
         message.channel.send(response);
